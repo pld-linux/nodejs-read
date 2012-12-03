@@ -1,13 +1,13 @@
 %define		pkg	read
 Summary:	read(1) for node programs
 Name:		nodejs-%{pkg}
-Version:	0.0.1
+Version:	1.0.4
 Release:	1
 License:	MIT
 Group:		Development/Libraries
 URL:		https://github.com/isaacs/read
 Source0:	http://registry.npmjs.org/%{pkg}/-/%{pkg}-%{version}.tgz
-# Source0-md5:	e989aa2c7be588bda1680c17fbd0ff69
+# Source0-md5:	b88c8ee1c1785e89461733a020e0c07a
 BuildRequires:	rpmbuild(macros) >= 1.634
 Requires:	nodejs
 BuildArch:	noarch

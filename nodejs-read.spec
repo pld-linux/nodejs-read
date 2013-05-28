@@ -2,14 +2,15 @@
 Summary:	read(1) for node programs
 Name:		nodejs-%{pkg}
 Version:	1.0.4
-Release:	1
+Release:	2
 License:	MIT
 Group:		Development/Libraries
-URL:		https://github.com/isaacs/read
 Source0:	http://registry.npmjs.org/%{pkg}/-/%{pkg}-%{version}.tgz
 # Source0-md5:	b88c8ee1c1785e89461733a020e0c07a
+URL:		https://github.com/isaacs/read
 BuildRequires:	rpmbuild(macros) >= 1.634
 Requires:	nodejs
+Requires:	nodejs-mute-stream >= 0.0.2
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
@@ -22,7 +23,6 @@ mv package/* .
 
 %install
 rm -rf $RPM_BUILD_ROOT
-
 install -d $RPM_BUILD_ROOT%{nodejs_libdir}/%{pkg}
 cp -pr lib package.json $RPM_BUILD_ROOT%{nodejs_libdir}/%{pkg}
 

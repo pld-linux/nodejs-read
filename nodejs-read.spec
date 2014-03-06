@@ -10,7 +10,7 @@ Source0:	http://registry.npmjs.org/%{pkg}/-/%{pkg}-%{version}.tgz
 URL:		https://github.com/isaacs/read
 BuildRequires:	rpmbuild(macros) >= 1.634
 Requires:	nodejs >= 0.8.0
-Requires:	nodejs-mute-stream < 0.0.5
+Requires:	nodejs-mute-stream < 0.1.0
 Requires:	nodejs-mute-stream >= 0.0.4
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
